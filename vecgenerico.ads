@@ -19,3 +19,19 @@ generic
       function Compare(Vec,Vec1: in Tipovec) return Boolean;
       function Busqueda(Vec: Tipovec; Dato: Tipodato) return Integer; --devielve el valor de la poscicon o un "0" si no se encuentra.
       end Vecgenerico;
+-- procedure putInteger (x: in integer) is //leer vector
+-- begin
+-- Put (X);
+--end Putinteger;
+--procedure Getinteger (X: out Integer) is //Imprimir vector
+--begin
+--Get(X);
+--end Getinteger;
+--function Raiz (X: integer) return float is
+--begin
+--return sqrt(float(x));
+--end Raiz;
+
+--package Vecint is new Vecgenerico(integer,Rango, putInteger, getInteger,Raiz,">","+",0,elemento);
+--   use vecInt;
+--   V,E:Tipovec;
