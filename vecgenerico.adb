@@ -1,14 +1,18 @@
 --Cuerpo de un paquete generico - parte oculta
+With Ada.Text_Io; use ada.Text_IO;
 package body Vecgenerico is -- body, especificacion e implementacion
    
    procedure Leer (Vec: out Tipovec) is
-  
+   
    begin
       
    for i in vec'range loop
       
-      Get (Vec (I));
-      
+	  new_line;
+	  Put("Ingrese el elemento " & Integer'image(indice'pos(i)) & " del vector:");
+         new_line;
+	  Get (Vec (I));
+      new_line;
       end loop;
       
    end Leer;
@@ -19,8 +23,11 @@ begin
   
    for I in vec'range loop
       
-      Put (Vec (I));
-   
+	   new_line;
+	 Put("El elemento " & Integer'Image(indice'pos(i)) & " del vector es:");
+	     new_line;
+	  Put (Vec (I));
+   new_line;
    end loop;
    
 end Imprimir;
