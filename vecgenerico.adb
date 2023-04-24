@@ -22,14 +22,9 @@ procedure Imprimir (Vec: in Tipovec) is
 begin
   
    for I in vec'range loop
-      
-	   new_line;
-	 Put("El elemento " & Integer'Image(indice'pos(i)) & " del vector es:");
-	     new_line;
 	  Put (Vec (I));
-   new_line;
    end loop;
-   
+      new_line;
 end Imprimir;
 
 --//////////////////ORDENAR////////////////--
